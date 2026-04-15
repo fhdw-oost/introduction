@@ -5,7 +5,7 @@
 Befehle in Reihenfolge. Plattformspezifische Befehle sind entsprechend markiert.
 
 ### Setup
-
+Programm „Terminal“ öffnen _(nur Windows: **nicht** cmd)_.
 1. Git installieren _(nur Windows)_
    ```powershell
    winget install --id Git.Git -e --source winget
@@ -14,11 +14,11 @@ Befehle in Reihenfolge. Plattformspezifische Befehle sind entsprechend markiert.
    ```powershell
    git config --global core.editor notepad
    ```
-3. Git-Konfiguration bearbeiten (Name, E-Mail etc.)
+3. Git-Konfiguration bearbeiten (Name, E-Mail etc. setzen)
    ```bash
    git config --global --edit
    ```
-4. SSH-Key generieren
+4. SSH-Key generieren (Eigene FHDW-E-Mail-Adresse verwenden)
    ```bash
    ssh-keygen -t ed25519 -C "a_skywalker@edu.fhdw.de"
    ```
@@ -38,7 +38,9 @@ Befehle in Reihenfolge. Plattformspezifische Befehle sind entsprechend markiert.
 
 6. In einen Ordner navigieren und neues Repository anlegen
    ```bash
-   cd Desktop && mkdir Beispiel && cd Beispiel
+   cd Desktop
+   mkdir Beispiel
+   cd Beispiel
    git init
    ```
 7. Datei erstellen
